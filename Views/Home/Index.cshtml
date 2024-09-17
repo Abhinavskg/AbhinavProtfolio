@@ -1,0 +1,210 @@
+﻿@{
+    ViewData["Title"] = "Abhinav Gupta • Portfolio";
+}
+
+<body>
+    <div id="top"></div>
+    <div class="section" id="introduction">
+        <div id="bg-div"></div>
+        <div id="intro-content">
+            <div id="intro-left" class="animate-scroll intro-half">
+                <div id="headshot-content">
+                    <div id="headshots">
+
+                        <picture>
+                            <source srcset="images/picnb.jpg" type="image/webp">
+                            <img id="headshot-bw" class="headshot" src="/images/headshot-bw.png" alt="black and white headshot of ethan baker" width="512" />
+                        </picture>
+                        <picture>
+                            <source srcset="images/picn.jpg" type="image/webp">
+                            <img id="headshot-color" class="headshot crop" src="/images/headshot-color.png" alt="color headshot of ethan baker" width="512" />
+                        </picture>
+                    </div>
+                </div>
+                <div id="social-buttons">
+                    <a id="in-btn" class="btn btn-primary social" target="_blank" href="https://linkedin.com/in/abhinavskg1"><img class="social-img" src="/images/in-icon.png" alt="linkedin icon" width="64"/></a>
+                    <a id="h-btn"  href="https://twitter.com/Abhinavgupta29"><img class="social-img" src="/images/x.png" alt="handshake icon" width="64" /></a>
+                    <a id="git-btn" class="btn btn-primary social" target="_blank" href="https://github.com/Abhinavskg"><img class="social-img" src="images/git-icon.png" alt="github icon" width="64"/></a>
+                </div>
+            </div>
+            <div id="intro-right" class="animate-scroll intro-half">
+
+                <div id="title-text">
+                    <h1 id="intro-title"><b>Hello,</b><br />I'm Abhinav</h1>
+                    <p id="intro-tagline">A motivated Cornell undergrad interested in Software Engineering.</p>
+                </div>  
+                <div id="intro-buttons">
+                    <a id="resume-btn" class="btn btn-primary intro" target="_blank" href="https://drive.google.com/file/d/1mBT2L7ujFwLTJciCScHUeNtYZoEb8USG/view?usp=sharing">VIEW RESUME</a>
+                    <a id="resume-btn new" class="btn btn-primary intro" target="_blank" href="resume.pdf" download="resume.pdf">DOWNLOAD RESUME</a>
+
+                    <script>
+                        // Optional: You can also handle the download event with JavaScript, but the href and download attribute do most of the work here.
+                        document.getElementById('new').addEventListener('click', function () {
+                            // Log message when download starts
+                            console.log('Downloading resume...');
+                        });
+                    </script>
+                                
+                </div>
+
+            </div>
+        </div>
+        <a class="btn-arrow" href=#about-anchor id="about-me-button">About Me<br />∨</a>
+    </div>
+    <div id="about-anchor"></div>
+    <article class="section" id="about-me">
+        <div id="about-content">
+            <h1 class="animate-scroll" id="about-header"><strong>About Me</strong></h1>
+            <p class="animate-scroll" id="about-me-paragraph">
+                Hello! I'm Abhinav Gupta, a passionate <b>.Net Developer</b> with a strong foundation in C#, ASP.NET Core, and web technologies like HTML, CSS, and JavaScript.
+                I hold a<strong> Bachelor’s degree in Computer Applications (BCA) </strong> from Chatrapati Sahu Ji Maharaj University and am currently pursuing my <strong>Master’s in Computer Applications (MCA)</strong>
+                from Indira Gandhi National Open University. I enjoy building clean, efficient, and scalable web applications, and I’m constantly learning new technologies to stay updated in 
+                the fast-paced world of software development. My goal is to contribute to impactful projects and grow my expertise as a full-stack developer.
+                Outside of coding, I love playing chess, listening to music, and exploring new places.<br />
+
+                Let’s connect and build something amazing together!
+
+              
+            </p>
+        </div>
+        <a class="btn-arrow" href=#edu-exp id="credentials-button">My Credentials<br />∨</a>
+        <img id="top-left-line" src="/images/top-left-line.png" alt="top corner art yellow" />
+        <img id="bottom-right-line" src="/images/bottom-right-line.png" alt="bottom corner art yellow"/>
+    </article>
+    <section class="section" id="edu-exp">
+        <div id="edu-exp-title">
+            <h2>Education</h2>
+            <button id="edu-exp-expand" class="btn-arrow expand" data-bs-toggle="collapse" data-bs-target="#edu-exp-info">Expand<br />∨</button>
+        </div>
+    </section>
+    <div id="collapse-container">
+        <div class="collapse" id="edu-exp-info">
+            <div id="edu-exp-box">
+                <div id="edu-exp-content">
+                    <h3>Education</h3>
+                    <div class="edu-exp-div box-shadow animate-scroll">
+                        <picture>
+                            <source srcset="images/ignou.png" type="image/webp">
+                            <img class="edu-exp-img" src="images/ignou.png" height="256" width="256" loading="lazy">
+                        </picture>
+                        <div info>
+                            <h5 class="date">Class of 2022-2024</h5>
+                            <h4 class="header">Indra Gandhi National Open University</h4>
+                            <h6 class="subheader">Master's in Computer Application (MCA) • Computer Application , Computer Science</h6>
+                            <p class="details">Relevant Coursework:</p>
+                            <ul class="details">
+                                <li>Web Technologies</li>
+                                <li>Data Structures and Functional Programming</li>
+                                <li>Discrete Structures</li>
+                                <li> Object Oriented Programming</li>
+                                <li>Business Statistics</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="edu-exp-div box-shadow animate-scroll">
+                        <picture>
+                            <source srcset="images/cazenovia-logo.webp" type="image/csjmu.png">
+                            <img class="edu-exp-img" src="images/csjmu.png" height="256" width="256" loading="lazy">
+                        </picture>
+                        <div info>
+                            <h5 class="date">Class of 2019-2022</h5>
+                            <h4 class="header">CSJM University (Kanpur University)</h4>
+                            <h6 class="subheader">Bachlor's Of Computer Application (BCA) • Computer Application,Web technologies </h6>
+                            <p class="details">Relevant Coursework:</p>
+                            <ul class="details">
+                                <li>Software Engennering</li>
+                                <li>Data Structures and Functional Programming</li>
+                                <li>Mathmetics</li>
+                                <li> Object Oriented Programming</li>
+                                <li>Business Communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="edu-exp-div box-shadow animate-scroll">
+                        <picture>
+                            <source srcset="images/upb.png" type="image/webp">
+                            <img class="edu-exp-img" src="images/upb.png" height="200" width="200" loading="lazy">
+                        </picture>
+                        <div info>
+                            <h5 class="date">Class of 2019</h5>
+                            <h4 class="header">MDSM Inter College</h4>
+                            <h6 class="subheader">Intermediate • PCM | 10+2</h6>
+                        </div>
+                    </div>
+                    <div class="edu-exp-div box-shadow animate-scroll">
+                        <picture>
+                            <source srcset="images/upb.png" type="image/webp">
+                            <img class="edu-exp-img" src="images/upb.png" height="200" width="200" loading="lazy">
+                        </picture>
+                        <div info>
+                            <h5 class="date">Class of 2017</h5>
+                            <h4 class="header">MDSM Inter College</h4>
+                            <h6 class="subheader">Highschool • PCM | 10</h6>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+    <section class="section" id="proj-skill">
+        <div id="proj-skill-title">
+            <h2>Projects & Skills</h2>
+            <button id="skill-expand-button" class="btn-arrow expand" data-bs-toggle="collapse" data-bs-target="#proj-skill-info">Expand<br />∨</button>
+        </div>
+    </section>
+    <div id="proj-skill-container">
+        <div class="collapse" id="proj-skill-info">
+            <div class="outside-container">
+                <div id="projects">
+                    <div class="project animate-scroll" id="school">
+                        <div class="text">
+                            <h5 class="text date">August 2023</h5>
+                            <h4 class="text header">School Management System</h4>
+                            <h6 class="text subheader">HTML | CSS | JavaScript | C# | ASP.NET Core | Bootstrap | MVC | MSSQL | Entity Framework Core </h6>
+                            <p>
+                                The School Management System is a web-based platform designed to student 
+                                can view the dynamic website see the school details and all information about school , educational institutions.
+                                It offers features like class registration, while providing lecture details, class management,and course timetable,
+                                Administrators can manage courses, enrollment, classes,and system settings efficiently.
+                            </p>
+                        </div>
+                        <div id="button-div">
+                            <a class="school git-btn" target="_blank" href="https://github.com/Abhinavskg/SchoolManagementWebApp">View on Github</a>
+                        </div>
+                    </div>
+                    <div class="project animate-scroll" id="courier">
+                        <div class="text">
+                            <h5 class="text date">November 2023</h5>
+                            <h4 class="text header">Courier Web Application</h4>
+                            <h6 class="text subheader">C# | ASP.NET Core | Identity Framework Core | MVC | HTML | CSS | Javascript | MSSQL | Bootstrap</h6>
+                            <p>
+                                The project involved developing a robust delivery management system using ASP.NET MVC 8.0 with Entity Framework, enhancing
+                                operational efficiency for courier services. Key features included authentication, CRUD operations, advanced search, and secure
+                                data handling. The system's modular design and scalability foster adaptability, laying a foundation for future enhancements and 
+                                industry compliance.
+                            </p>
+                        </div>
+                        <div id="button-div">
+                            <a class="courier git-btn" target="_blank" href="https://github.com/Abhinavskg/CourierWebApplication">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outside-container" id="skill-container">
+                <h3 class="proj-title">Technical Skills</h3>
+                <div id="skills">
+                    <img class="skill-icon" id="csharp" src="images/csharp-icon.png" />
+                    <img class="skill-icon" id="javascript" src="images/js-icon.png" />
+                    <img class="skill-icon" id="html5" src="images/html-icon.png" />
+                    <img class="skill-icon" id="css3" src="images/css-icon.png" />
+                    <img class="skill-icon" id="json" src="images/json-icon.png" />
+                    <img class="skill-icon" id="dotnet" src="images/net.png" />
+                    <img class="skill-icon" id="bootstrap" src="images/bootstrap-icon.png" />
+                    <img class="skill-icon" id="sql" src="images/sql.png" />
+                    <img class="skill-icon" id="azure" src="images/azure.png" />
+            
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
