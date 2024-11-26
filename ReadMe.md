@@ -34,8 +34,8 @@ Follow these steps to set up and run the website locally:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/yourportfolio.git
-    cd yourportfolio
+    git clone https://github.com/Abhinavskg/AbhinavProtfolio
+    cd AbhinavProtfolio
     ```
 
 2. **Install dependencies**:
